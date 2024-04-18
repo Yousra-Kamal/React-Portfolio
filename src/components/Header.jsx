@@ -4,15 +4,15 @@ import yousra from "../images/yousra.jpg";
 
 // eslint-disable-next-line no-unused-vars
 import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 export default function Header(props) {
   // eslint-disable-next-line react/prop-types
   const { currentPage, handlePageChange } = props;
+  const inActive =
+    "inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700";
+  const activeLink =
+    "inline-flex items-center border-b-2 border-rose-950 px-1 pt-1 text-sm font-medium text-gray-900";
 
   return (
     <Disclosure as="nav" className="bg-white shadow">
@@ -54,28 +54,32 @@ export default function Header(props) {
                   <a
                     href="#about"
                     onClick={() => handlePageChange("About")}
-                    className="inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium text-gray-900"
+                    className={currentPage === "About" ? activeLink : inActive}
                   >
                     About
                   </a>
                   <a
                     href="#portfolio"
                     onClick={() => handlePageChange("Portfolio")}
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                    className={
+                      currentPage === "Portfolio" ? activeLink : inActive
+                    }
                   >
                     Portfolio
                   </a>
                   <a
                     href="#contact"
                     onClick={() => handlePageChange("Contact")}
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                    className={
+                      currentPage === "Contact" ? activeLink : inActive
+                    }
                   >
                     Contact
                   </a>
                   <a
                     href="#resume"
                     onClick={() => handlePageChange("Resume")}
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                    className={currentPage === "Resume" ? activeLink : inActive}
                   >
                     Resume
                   </a>
