@@ -21,7 +21,7 @@ export default function About() {
                 </p>
                 <p className="mt-6 text-base leading-7 text-gray-600">
                 My previous employment was for nearly
-                  seven yeasrs at AS-Salama Hospital as a clinical pharmacist,
+                  seven yeasrs at Dar As Salama Medical Hospital as a clinical pharmacist,
                   where I gained experience in patient care, medication
                   management, and customer service. <br /> <br />
                   I am a driven and self-motivated individual with a passion for
