@@ -31,7 +31,7 @@ export default function Header(props) {
             <div className="flex h-16 justify-between">
               <div className="hidden sm:ml-6 sm:flex sm:items-center">
                 <div className="min-w-0 flex-1">
-                  <h2 className="text-2xl font-bold leading-7 text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight  ">
+                  <h2 className="text-3xl font-bold font-serif leading-7 text-gray-900 sm:truncate    ">
                     <a href="#about" onClick={() => handlePageChange("About")}>
                       Yousra Kamal
                     </a>
