@@ -1,14 +1,17 @@
-/* import { Fragment } from "react"; */
+/* eslint-disable no-unused-vars */
+import { Fragment } from "react";
+import yousra from "../images/yousra.jpg";
 
 // eslint-disable-next-line no-unused-vars
 import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
-/* function classNames(...classes) {
+function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
-} */
+}
 
 export default function Header(props) {
+  // eslint-disable-next-line react/prop-types
   const { currentPage, handlePageChange } = props;
 
   return (
@@ -17,70 +20,35 @@ export default function Header(props) {
         <>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex h-16 justify-between">
-              <div className="flex">
-                {/*  <div className="flex flex-shrink-0 items-center">
-                  <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                    alt="Your Company"
-                  />
-                </div> */}
-                <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-                  {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
-                  <a
-                    href="#about"
-                    onClick={() => handlePageChange("About")}
-                    className="inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium text-gray-900"
-                  >
-                    About
-                  </a>
-                  <a
-                    href="#portfolio"
-                    onClick={() => handlePageChange("Portfolio")}
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-                  >
-                    Portfolio
-                  </a>
-                  <a
-                    href="#contact"
-                    onClick={() => handlePageChange("Contact")}
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-                  >
-                    Contact
-                  </a>
-                  <a
-                    href="#resume"
-                    onClick={() => handlePageChange("Resume")}
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-                  >
-                    Resume
-                  </a>
-                </div>
-              </div>
               <div className="hidden sm:ml-6 sm:flex sm:items-center">
-                {/*   <button
+                <div className="min-w-0 flex-1">
+                  <h2 className="text-2xl font-bold leading-7 text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight">
+                    Yousra Kamal
+                  </h2>
+                </div>
+                {/*      <button
                   type="button"
                   className="relative rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                 >
                   <span className="absolute -inset-1.5" />
                   <span className="sr-only">View notifications</span>
                   <BellIcon className="h-6 w-6" aria-hidden="true" />
-                </button> */}
+                </button>   */}
 
                 {/* Profile dropdown */}
-                {/*  <Menu as="div" className="relative ml-3">
+                <Menu as="div" className="relative ml-3">
                   <div>
-                    <Menu.Button className="relative flex rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                    <Menu.Button className="relative flex rounded-full bg-white text-sm  ">
                       <span className="absolute -inset-1.5" />
                       <span className="sr-only">Open user menu</span>
                       <img
                         className="h-8 w-8 rounded-full"
-                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                        alt=""
+                        src={yousra}
+                        alt="my picture"
                       />
                     </Menu.Button>
                   </div>
-                  <Transition
+                  {/*      <Transition
                     as={Fragment}
                     enter="transition ease-out duration-200"
                     enterFrom="transform opacity-0 scale-95"
@@ -130,9 +98,50 @@ export default function Header(props) {
                         )}
                       </Menu.Item>
                     </Menu.Items>
-                  </Transition>
-                </Menu> */}
+                  </Transition> */}
+                </Menu>
               </div>
+              <div className="flex">
+                {/*  <div className="flex flex-shrink-0 items-center">
+                  <img
+                    className="h-8 w-auto"
+                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                    alt="Your Company"
+                  />
+                </div> */}
+                <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
+                  {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
+                  <a
+                    href="#about"
+                    onClick={() => handlePageChange("About")}
+                    className="inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium text-gray-900"
+                  >
+                    About
+                  </a>
+                  <a
+                    href="#portfolio"
+                    onClick={() => handlePageChange("Portfolio")}
+                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                  >
+                    Portfolio
+                  </a>
+                  <a
+                    href="#contact"
+                    onClick={() => handlePageChange("Contact")}
+                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                  >
+                    Contact
+                  </a>
+                  <a
+                    href="#resume"
+                    onClick={() => handlePageChange("Resume")}
+                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                  >
+                    Resume
+                  </a>
+                </div>
+              </div>
+
               <div className="-mr-2 flex items-center sm:hidden">
                 {/* Mobile menu button */}
                 <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -184,6 +193,7 @@ export default function Header(props) {
                 Resume
               </Disclosure.Button>
             </div>
+
             <div className="border-t border-gray-200 pb-3 pt-4">
               {/*    <div className="flex items-center px-4">
                 <div className="flex-shrink-0">
