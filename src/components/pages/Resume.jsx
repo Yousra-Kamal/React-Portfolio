@@ -7,11 +7,12 @@ export default function Resume() {
       <div>
         {/* Technical Skills */}
         <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-          <h2 className="text-2xl font-medium text-amber-800">
+          <h1 className="text-3xl font-serif font-bold text-center mb-20">Resumé</h1>
+          <h2 className="text-2xl font-medium text-amber-900">
             Technical Skills
           </h2>
           <div className="mt-6 space-y-10 divide-y divide-gray-200 border-b border-t border-gray-200  pb-6">
-            <div className="pt-10 lg:grid lg:grid-cols-12 lg:gap-x-8">
+            <div className=" lg:grid lg:grid-cols-12 lg:gap-x-8">
               <div className="lg:col-span-8 lg:col-start-5 xl:col-span-9 xl:col-start-4 xl:grid xl:grid-cols-3 xl:items-start xl:gap-x-8">
                 <div className="mt-4 lg:mt-6 xl:col-span-2 xl:mt-0">
                   <ul className="text-medium   text-gray-900">
@@ -30,9 +31,9 @@ export default function Resume() {
                 <p className="text-lg  font-medium text-gray-900">Front-End</p>
               </div>
             </div>
-            <div className="pt-10 lg:grid lg:grid-cols-12 lg:gap-x-8">
+            <div className=" lg:grid lg:grid-cols-12 lg:gap-x-8">
               <div className="lg:col-span-8 lg:col-start-5 xl:col-span-9 xl:col-start-4 xl:grid xl:grid-cols-3 xl:items-start xl:gap-x-8">
-                <div className="mt-4 lg:mt-6 xl:col-span-2 xl:mt-0">
+                <div className="mt-4   xl:col-span-2 xl:mt-0">
                   <ul className="text-medium   text-gray-900">
                     <li>- Node</li>
                     <li>- MySQL</li>
@@ -54,7 +55,7 @@ export default function Resume() {
         </div>
         {/* Work Experience */}
         <div className="mx-auto max-w-2xl px-4   lg:max-w-7xl lg:px-8">
-          <h2 className="text-2xl font-medium text-amber-800">
+          <h2 className="text-2xl font-medium text-amber-900">
             Work Experience
           </h2>
           <div className="mt-3 space-y-10 divide-y divide-gray-200 border-b border-t border-gray-200 pb-10">
@@ -83,7 +84,7 @@ export default function Resume() {
         </div>
         {/* Education */}
         <div className="mx-auto max-w-2xl px-4 py-16 lg:max-w-7xl lg:px-8">
-          <h2 className="text-2xl font-medium text-amber-800">Education</h2>
+          <h2 className="text-2xl font-medium text-amber-900">Education</h2>
           <div className="mt-3 space-y-10 divide-y divide-gray-200 border-b border-t border-gray-200 pb-10">
             <div>
               <div className="mt-6 flex items-center text-sm">
