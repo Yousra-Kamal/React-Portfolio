@@ -1,10 +1,16 @@
 /* eslint-disable no-unused-vars */
 
 import yousra from "../images/yousra.jpg";
-
 // eslint-disable-next-line no-unused-vars
-import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { Disclosure, Menu } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+
+const styles = {
+  heading: {
+    background: "#dcbc95",
+     
+  },
+};
 
 export default function Header(props) {
   // eslint-disable-next-line react/prop-types
@@ -13,16 +19,19 @@ export default function Header(props) {
     "inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700";
   const activeLink =
     "inline-flex items-center border-b-2 border-rose-950 px-1 pt-1 text-sm font-medium text-gray-900";
+    const activeLinkMobile =  "block border-l-4 border-rose-900 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-gray-900";
+    const inActiveMobile = "block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700";
+
 
   return (
-    <Disclosure as="nav" className="bg-white shadow">
+    <Disclosure as="nav" style={styles.heading}>
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex h-16 justify-between">
               <div className="hidden sm:ml-6 sm:flex sm:items-center">
                 <div className="min-w-0 flex-1">
-                  <h2 className="text-2xl font-bold leading-7 text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight">
+                  <h2 className="text-2xl font-bold leading-7 text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight  ">
                     <a href="#about" onClick={() => handlePageChange("About")}>
                       Yousra Kamal
                     </a>
@@ -107,7 +116,7 @@ export default function Header(props) {
                 as="a"
                 href="#about"
                 onClick={() => handlePageChange("About")}
-                className="block border-l-4 border-indigo-500 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-indigo-700"
+                className={currentPage === "About" ? activeLinkMobile : inActiveMobile}
               >
                 About
               </Disclosure.Button>
@@ -115,7 +124,7 @@ export default function Header(props) {
                 as="a"
                 href="#portfolio"
                 onClick={() => handlePageChange("Portfolio")}
-                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
+                className={currentPage === "Portfolio" ? activeLinkMobile : inActiveMobile}
               >
                 Portfolio
               </Disclosure.Button>
@@ -123,7 +132,7 @@ export default function Header(props) {
                 as="a"
                 href="#contact"
                 onClick={() => handlePageChange("Contact")}
-                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
+                className= {currentPage === "Contact" ? activeLinkMobile : inActiveMobile}
               >
                 Contact
               </Disclosure.Button>
@@ -131,7 +140,7 @@ export default function Header(props) {
                 as="a"
                 href="#resume"
                 onClick={() => handlePageChange("Resume")}
-                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
+                className= {currentPage === "Resume" ? activeLinkMobile : inActiveMobile}
               >
                 Resume
               </Disclosure.Button>

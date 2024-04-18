@@ -5,7 +5,7 @@ import coding from "../../images/coding.jpg";
 
 export default function About() {
   return (
-    <div className="bg-white">
+    <div className=" ">
       <main className="isolate">
         {/* Content section */}
         <div className="mt-32 overflow-hidden sm:mt-40">
