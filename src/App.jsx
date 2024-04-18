@@ -1,12 +1,9 @@
 import "./App.css";
-import Footer from "./components/Footer"; // Import the 'Footer' component
+
+import PortfolioContainer from "./components/PortfolioContainer";
 
 function App() {
-  return (
-    <div className="flex justify-center">
-      <Footer/>
-    </div>
-  );
+  return <PortfolioContainer />;
 }
 
 export default App;
