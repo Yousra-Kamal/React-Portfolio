@@ -1,5 +1,5 @@
 import { PaperClipIcon } from "@heroicons/react/20/solid";
-import myResume from "../../pdf/My Resumé.pdf";
+import myResume from "../../pdf/my_Resume.pdf";
 
 export default function Resume() {
   return (
@@ -25,7 +25,7 @@ export default function Resume() {
                     <li>- Bootstrap</li>
                     <li>- Tailwind css</li>
                     <li>- React</li>
-                    <li>- Responsive Design</li>
+                    <li>- Next.js</li>
                   </ul>
                 </div>
               </div>
@@ -73,13 +73,27 @@ export default function Resume() {
                 </p>
               </div>
               <ul className="text-medium  pt-4 text-gray-900">
-                <li>- Reviewing prescriptions.</li>
+                <li>• Reviewing prescriptions.</li>
                 <li>
-                  - Compounding and dispensing for long term care patients and
-                  acute admissions.{" "}
+                  • Compounding and dispensing for long term care patients and
+                  acute admissions.
                 </li>
-                <li>- Supplying to hospital stations and crash carts. </li>
-                <li>- Ward rounds and medical record documentation.</li>
+                <li>• Supplying to hospital stations and crash carts. </li>
+                <li>• Ward rounds and medical record documentation.</li>
+              </ul>
+            </div>
+          </div>
+          <div className="mt-3 space-y-10 divide-y divide-gray-200 border-b border-t border-gray-200 pb-10">
+            <div>
+              <div className="mt-6 flex items-center text-sm">
+                <p className="text-medium  font-medium  text-gray-900">
+                  Khartoum Teaching Hospital (10/2013 - 01/2014)
+                </p>
+              </div>
+              <ul className="text-medium  pt-4 text-gray-900">
+                <li>• Medication Assessments and management .</li>
+                <li>• Dispensing for acute admissions.</li>
+                <li>• Supplying to hospital stations and crash carts. </li>
               </ul>
             </div>
           </div>
@@ -114,7 +128,7 @@ export default function Resume() {
         </div>
 
         {/*Resume  Attachments */}
-        <div className="mx-auto max-w-2xl px-4 py-16 lg:max-w-7xl lg:px-8">
+        <div className="mx-auto max-w-2xl px-4  lg:max-w-7xl lg:px-8">
           <dt className="text-sm pb-4 font-medium leading-6 text-gray-900">
             Attachments
           </dt>
@@ -133,7 +147,7 @@ export default function Resume() {
                     <span className="truncate font-medium">
                       Download Full Resume
                     </span>
-                    <span className="flex-shrink-0 text-gray-400">2.4mb</span>
+                    <span className="flex-shrink-0 text-gray-400">173 KB</span>
                   </div>
                 </div>
                 <div className="ml-4 flex-shrink-0">
