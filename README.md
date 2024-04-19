@@ -19,7 +19,7 @@ This is my portfolio that shows information about myself, examples of my applica
 
  
 
-The web application is hosted on Netlify. Link to deployed website: [React Portfolio](https://main--yousra-portfolio.netlify.app/resume)
+The web application is hosted on Netlify. Link to deployed website: [React Portfolio](https://main--yousra-portfolio.netlify.app/)
  
 
 Homepage / About Me
