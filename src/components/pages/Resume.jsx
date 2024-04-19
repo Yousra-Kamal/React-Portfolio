@@ -15,20 +15,14 @@ export default function Resume() {
           <h2 className="text-2xl font-medium text-amber-900">
             Technical Skills
           </h2>
-          <div className="mt-6 space-y-10 divide-y divide-gray-200 border-b border-t border-gray-200  pb-6">
+          <div className="mt-6 space-y-10 divide-y divide-gray-200 border-b border-t border-gray-200   ">
             <div className=" lg:grid lg:grid-cols-12 lg:gap-x-8">
               <div className="lg:col-span-8 lg:col-start-5 xl:col-span-9 xl:col-start-4 xl:grid xl:grid-cols-3 xl:items-start xl:gap-x-8">
                 <div className="mt-4 lg:mt-6 xl:col-span-2 xl:mt-0">
-                  <ul className="text-medium   text-gray-900">
-                    <li>- HTML</li>
-                    <li>- CSS</li>
-                    <li>- Javascript</li>
-                    <li>- JQuery</li>
-                    <li>- Bootstrap</li>
-                    <li>- Tailwind css</li>
-                    <li>- React</li>
-                    <li>- Next.js</li>
-                  </ul>
+                  <div className="text-medium   text-gray-900">
+                    HTML - CSS - Javascript - JQuery - Bootstrap - Tailwind css
+                    - React - Next.js
+                  </div>
                 </div>
               </div>
               <div className="mt-6 flex items-center text-sm lg:col-span-4 lg:col-start-1 lg:row-start-1 lg:mt-0 lg:flex-col lg:items-start xl:col-span-3">
@@ -38,17 +32,11 @@ export default function Resume() {
             <div className=" lg:grid lg:grid-cols-12 lg:gap-x-8">
               <div className="lg:col-span-8 lg:col-start-5 xl:col-span-9 xl:col-start-4 xl:grid xl:grid-cols-3 xl:items-start xl:gap-x-8">
                 <div className="mt-4   xl:col-span-2 xl:mt-0">
-                  <ul className="text-medium   text-gray-900">
-                    <li>- Node</li>
-                    <li>- MySQL</li>
-                    <li>- Sequelize</li>
-                    <li>- MongoDB</li>
-                    <li>- Mongoose</li>
-                    <li>- Express</li>
-                    <li>- GraphQL</li>
+                  <div className="text-medium   text-gray-900">
+                    Node - Express - MySQL - Sequelize - MongoDB - Mongoose -
                     {/*   eslint-disable-next-line react/no-unescaped-entities */}
-                    <li>- API's</li>
-                  </ul>
+                    GraphQL - API's
+                  </div>
                 </div>
               </div>
               <div className="mt-6 flex items-center text-sm lg:col-span-4 lg:col-start-1 lg:row-start-1 lg:mt-0 lg:flex-col lg:items-start xl:col-span-3">
