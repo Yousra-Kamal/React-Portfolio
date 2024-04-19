@@ -15,11 +15,12 @@ This is my portfolio that shows information about myself, examples of my applica
 - Download it through Github
 - Run npm i in terminal to install packages
 
-## Usage:
+## Application Preview
 
-Webpage: https:// 
+ 
 
-### Screenshots:
+The web application is hosted on Netlify. Link to deployed website: [React Portfolio](https://main--yousra-portfolio.netlify.app/resume)
+ 
 
 Homepage / About Me
 ![Screenshot](src/images/screenshot_1.jpg)

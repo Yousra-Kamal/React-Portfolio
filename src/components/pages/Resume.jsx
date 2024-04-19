@@ -134,7 +134,7 @@ export default function Resume() {
           <dt className="text-sm pb-4 font-medium leading-6 text-gray-900">
             Attachments
           </dt>
-          <dd className="mt-2 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
+          <dd className="mt-2 text-sm bg-amber-100 text-gray-900 sm:col-span-2 sm:mt-0">
             <ul
               role="list"
               className="divide-y divide-gray-100 rounded-md border border-gray-200"
