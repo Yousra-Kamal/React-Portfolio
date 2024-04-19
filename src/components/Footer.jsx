@@ -1,6 +1,7 @@
 //Footer component of the website that contains social media links and the copy right text
 
 const footerNavigation = {
+  // social media links and their icons
   social: [
     {
       name: "LinkedIn",
@@ -55,13 +56,19 @@ const footerNavigation = {
 };
 function Footer() {
   return (
-    <footer className="  mt-32 sm:mt-40" aria-labelledby="footer-heading">
+    <footer
+      className="mt-32 sm:mt-40 bg-amber-50"
+      aria-labelledby="footer-heading"
+    >
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
       <div className="mx-auto max-w-7xl px-6 pb-8 lg:px-8">
         <div className="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 md:flex md:items-center md:justify-between lg:mt-24">
           <div className="flex space-x-6 md:order-2">
+            {/*   mapping through the social media links and their icons
+            and adding them to the footer
+             */}
             {footerNavigation.social.map((item) => (
               <a
                 target="_blank"

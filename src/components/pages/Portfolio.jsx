@@ -1,3 +1,5 @@
+// Portfolio component 
+
 import githubIcon from "../../images/github.png";
 import techBlog from "../../images/techBlog.jpg";
 import workDay from "../../images/workDay.png";
@@ -6,6 +8,7 @@ import dishDelight from "../../images/dishdelight.jpg";
 import greenThumbs from "../../images/greenThumbs.png";
 import website1 from "../../images/website1.jpg";
 
+// Porjects data to be rendered in the Portfolio component
 const projects = [
   {
     id: 1,
@@ -100,6 +103,7 @@ export default function Portfolio() {
           <h2 className="text-3xl font-serif font-bold ">Portfolio</h2>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          {/*   Mapping through the projects data and rendering each project */}
           {projects.map((project) => (
             <article
               key={project.id}

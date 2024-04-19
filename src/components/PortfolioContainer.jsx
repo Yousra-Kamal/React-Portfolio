@@ -1,3 +1,4 @@
+// Dependencies and Components
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -10,6 +11,7 @@ function PortfolioContainer() {
   return (
     <>
       <div className="body">
+        {/*  Router component to manage the routes */}
         <Router>
           <Header />
           <Routes>

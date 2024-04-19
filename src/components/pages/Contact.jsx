@@ -1,8 +1,11 @@
+// Contact component
+
 import emailIcon from "../../images/email.jpg";
 import { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
 
 export default function Contact() {
+  // Set the initial form state using the useState hook
   const [email, setEmail] = useState("");
   const [Name, setName] = useState("");
   const [message, setMessage] = useState("");
