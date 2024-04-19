@@ -55,10 +55,7 @@ const footerNavigation = {
 };
 function Footer() {
   return (
-    <footer
-      className="  mt-32 sm:mt-40"
-      aria-labelledby="footer-heading"
-    >
+    <footer className="  mt-32 sm:mt-40" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>

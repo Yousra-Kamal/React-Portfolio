@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 import About from "./pages/About";
@@ -7,28 +7,22 @@ import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 
 function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState("About");
-
-  const renderPage = () => {
-    if (currentPage === "About") {
-      return <About />;
-    }
-    if (currentPage === "Portfolio") {
-      return <Portfolio />;
-    }
-    if (currentPage === "Contact") {
-      return <Contact />;
-    }
-    return <Resume />;
-  };
-  const handlePageChange = (page) => setCurrentPage(page);
-
   return (
-    <div className="body">
-      <Header currentPage={currentPage} handlePageChange={handlePageChange} />
-      {renderPage()}
-      <Footer currentPage={currentPage} handlePageChange={handlePageChange} />
-    </div>
+    <>
+      <div className="body">
+        <Router>
+          <Header />
+          <Routes>
+            <Route path="/" element={<About />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/resume" element={<Resume />} />
+          </Routes>
+        </Router>
+        <Footer />
+      </div>
+    </>
   );
 }
 

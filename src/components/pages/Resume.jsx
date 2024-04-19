@@ -7,7 +7,9 @@ export default function Resume() {
       <div>
         {/* Technical Skills */}
         <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-          <h1 className="text-3xl font-serif font-bold text-center mb-20">Resumé</h1>
+          <h1 className="text-3xl font-serif font-bold text-center mb-20">
+            Resumé
+          </h1>
           <h2 className="text-2xl font-medium text-amber-900">
             Technical Skills
           </h2>

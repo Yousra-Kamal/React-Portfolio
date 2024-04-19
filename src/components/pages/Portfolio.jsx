@@ -22,7 +22,7 @@ const projects = [
   },
   {
     id: 2,
-    title: "My website - Next.js",
+    title: "My website - Team Project",
     href: "https://yousra.site/",
     description:
       "Welcome to my professional portfolio. This website was built with Next.js framework.  ",
@@ -97,9 +97,7 @@ export default function Portfolio() {
     <div className=" py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-serif font-bold ">
-            Portfolio
-          </h2>
+          <h2 className="text-3xl font-serif font-bold ">Portfolio</h2>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {projects.map((project) => (

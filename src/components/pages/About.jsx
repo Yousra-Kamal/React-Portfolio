@@ -17,18 +17,18 @@ export default function About() {
                 </h2>
                 <p className="mt-6 text-xl leading-8 text-gray-600">
                   Hello! I am Yousra, a clinical pharmacist and a software
-                  developer in the making.  
+                  developer in the making.
                 </p>
                 <p className="mt-6 text-base leading-7 text-gray-600">
-                My previous employment was for nearly
-                  seven yeasrs at Dar As Salama Medical Hospital as a clinical pharmacist,
-                  where I gained experience in patient care, medication
-                  management, and customer service. <br /> <br />
-                  I am a driven and self-motivated individual with a passion for
-                  technology and a desire to make a positive impact through my
-                  work. I am currently studying to become a software developer. I am
-                  always looking for new opportunities to learn and grow. I am
-                  excited to see where my career will take me next.
+                  My previous employment was for nearly seven yeasrs at Dar As
+                  Salama Medical Hospital in Saudi Arabia as a clinical pharmacist, where I
+                  gained experience in patient care, medication management, and
+                  customer service. <br /> <br />I am a driven and
+                  self-motivated individual with a passion for technology and a
+                  desire to make a positive impact through my work. I am
+                  currently studying to become a software developer. I am always
+                  looking for new opportunities to learn and grow. I am excited
+                  to see where my career will take me next.
                 </p>
               </div>
               <div className="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">

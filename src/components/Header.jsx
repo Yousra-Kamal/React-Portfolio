@@ -1,27 +1,25 @@
-/* eslint-disable no-unused-vars */
-
+import { NavLink } from "react-router-dom";
 import yousra from "../images/yousra.jpg";
-// eslint-disable-next-line no-unused-vars
 import { Disclosure, Menu } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const styles = {
   heading: {
     background: "#dcbc95",
-     
   },
 };
 
-export default function Header(props) {
+export default function Header() {
   // eslint-disable-next-line react/prop-types
-  const { currentPage, handlePageChange } = props;
+
   const inActive =
     "inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700";
   const activeLink =
     "inline-flex items-center border-b-2 border-rose-950 px-1 pt-1 text-sm font-medium text-gray-900";
-    const activeLinkMobile =  "block border-l-4 border-rose-900 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-gray-900";
-    const inActiveMobile = "block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700";
-
+  const activeLinkMobile =
+    "block border-l-4 border-rose-900 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-gray-900";
+  const inActiveMobile =
+    "block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700";
 
   return (
     <Disclosure as="nav" style={styles.heading}>
@@ -32,18 +30,15 @@ export default function Header(props) {
               <div className="hidden sm:ml-6 sm:flex sm:items-center">
                 <div className="min-w-0 flex-1">
                   <h2 className="text-3xl font-bold font-serif leading-7 text-gray-900 sm:truncate    ">
-                    <a href="#about" onClick={() => handlePageChange("About")}>
-                      Yousra Kamal
-                    </a>
+                    <NavLink to="/about">Yousra Kamal</NavLink>
                   </h2>
                 </div>
 
                 {/* Profile dropdown */}
                 <Menu as="div" className="relative ml-3">
                   <div>
-                    <Menu.Button
-                      href="#about"
-                      onClick={() => handlePageChange("About")}
+                    <NavLink
+                      to="/about"
                       className="relative flex rounded-full bg-white text-sm  "
                     >
                       <span className="absolute -inset-1.5" />
@@ -54,44 +49,44 @@ export default function Header(props) {
                         src={yousra}
                         alt="my picture"
                       />
-                    </Menu.Button>
+                    </NavLink>
                   </div>
                 </Menu>
               </div>
               <div className="flex">
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-                  <a
-                    href="#about"
-                    onClick={() => handlePageChange("About")}
-                    className={currentPage === "About" ? activeLink : inActive}
+                  <NavLink
+                    to="/about"
+                    className={({ isActive }) => {
+                      return isActive ? activeLink : inActive;
+                    }}
                   >
                     About
-                  </a>
-                  <a
-                    href="#portfolio"
-                    onClick={() => handlePageChange("Portfolio")}
-                    className={
-                      currentPage === "Portfolio" ? activeLink : inActive
-                    }
+                  </NavLink>
+                  <NavLink
+                    to="/portfolio"
+                    className={({ isActive }) => {
+                      return isActive ? activeLink : inActive;
+                    }}
                   >
                     Portfolio
-                  </a>
-                  <a
-                    href="#contact"
-                    onClick={() => handlePageChange("Contact")}
-                    className={
-                      currentPage === "Contact" ? activeLink : inActive
-                    }
+                  </NavLink>
+                  <NavLink
+                    to="/contact"
+                    className={({ isActive }) => {
+                      return isActive ? activeLink : inActive;
+                    }}
                   >
                     Contact
-                  </a>
-                  <a
-                    href="#resume"
-                    onClick={() => handlePageChange("Resume")}
-                    className={currentPage === "Resume" ? activeLink : inActive}
+                  </NavLink>
+                  <NavLink
+                    to="/resume"
+                    className={({ isActive }) => {
+                      return isActive ? activeLink : inActive;
+                    }}
                   >
                     Resume
-                  </a>
+                  </NavLink>
                 </div>
               </div>
 
@@ -112,38 +107,40 @@ export default function Header(props) {
 
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 pb-3 pt-2">
-              <Disclosure.Button
-                as="a"
-                href="#about"
-                onClick={() => handlePageChange("About")}
-                className={currentPage === "About" ? activeLinkMobile : inActiveMobile}
+              <NavLink
+                to="/about"
+                className={({ isActive }) => {
+                  return isActive ? activeLinkMobile : inActiveMobile;
+                }}
               >
                 About
-              </Disclosure.Button>
-              <Disclosure.Button
-                as="a"
-                href="#portfolio"
-                onClick={() => handlePageChange("Portfolio")}
-                className={currentPage === "Portfolio" ? activeLinkMobile : inActiveMobile}
+              </NavLink>
+
+              <NavLink
+                to="/portfolio"
+                className={({ isActive }) => {
+                  return isActive ? activeLinkMobile : inActiveMobile;
+                }}
               >
                 Portfolio
-              </Disclosure.Button>
-              <Disclosure.Button
-                as="a"
-                href="#contact"
-                onClick={() => handlePageChange("Contact")}
-                className= {currentPage === "Contact" ? activeLinkMobile : inActiveMobile}
+              </NavLink>
+
+              <NavLink
+                to="/contact"
+                className={({ isActive }) => {
+                  return isActive ? activeLinkMobile : inActiveMobile;
+                }}
               >
                 Contact
-              </Disclosure.Button>
-              <Disclosure.Button
-                as="a"
-                href="#resume"
-                onClick={() => handlePageChange("Resume")}
-                className= {currentPage === "Resume" ? activeLinkMobile : inActiveMobile}
+              </NavLink>
+              <NavLink
+                to="/resume"
+                className={({ isActive }) => {
+                  return isActive ? activeLinkMobile : inActiveMobile;
+                }}
               >
                 Resume
-              </Disclosure.Button>
+              </NavLink>
             </div>
 
             <div className="border-t border-gray-200 pb-3 pt-4"></div>
