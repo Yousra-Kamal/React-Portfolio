@@ -1,4 +1,4 @@
-// Contact component
+// Contact page
 
 import emailIcon from "../../images/email.jpg";
 import { useState } from "react";
