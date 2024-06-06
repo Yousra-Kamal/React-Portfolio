@@ -21,7 +21,7 @@ export default function About() {
                 developer in the making.
               </p>
               <p className="mt-6 text-base leading-7 text-gray-600">
-                My previous employment was for nearly seven yeasrs at Dar As
+                My previous employment was for nearly seven years at Dar As
                 Salama Medical Hospital in Saudi Arabia as a clinical
                 pharmacist, where I gained experience in patient care,
                 medication management, and customer service. <br /> <br />I am a
