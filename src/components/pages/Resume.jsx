@@ -1,7 +1,7 @@
 // Resume page component
 
 import { PaperClipIcon } from "@heroicons/react/20/solid";
-import myResume from "../../pdf/my_Resume.pdf";
+import myResume from "../../pdf/Yousas CV.pdf";
 
 export default function Resume() {
   return (
